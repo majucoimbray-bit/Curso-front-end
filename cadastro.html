@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio - Maria Julia Coimbra</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a> 
+            <a class="cabecalho__menu__link"href="sobre.html">Sobre Mim</a>
+            <a class="cabecalho__menu__link" href="produtos.html">Produtos</a>
+            <a class="cabecalho__menu__link" href="falecomigo.html">Fale Comigo</a>
+            <a class="cabecalho__menu__link" href="maisvendidos.html">Mais Vendidos</a>
+            <a class="cabecalho__menu__link" href="cadastro.html">Cadastro</a>
+   
+   
+   
+   
+ </nav>
+    </header>
+
+              <form action="cadastro.html" method="post">
+                <H2>Cadastro do Cliente</H2>
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="email">email:</label>
+                <input type="email" name="imail" id="email">
+
+                <label for="Telefone">Telefone/Whatsapp</label>
+                <input type="tel" id="Telefone" name="telefone">
+
+                <label for="senha">Senha</label>
+                <input type="passoword" id="senha" name="senha">
+                <button type="submit">Cadastrar</button>
+                 </form> 
+
+                 <form action="login" method="post">
+                    <h2>login</h2>
+
+                    <label for="email">E-mail</label>
+                    <input type="email"  id="email" name="email"> 
+
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha">
+                    <button type="submit">Entrar </button>
+                    </form>
+ 
+                    <form action="produtos.html" method="post">
+
+                        <label for="produto">Selecione o programa que deseja</label>
+                        <br>
+                        <select name="selecionar" id="">
+                        <option value="">Escolha</option>
+                        <option value="Programa-para-hackear-celular-do-namorado"> Programa para heckar o celular do namorado</option>
+                        <option value="Site-para-loja-de-roupa"> Site loja de roupa</option>
+                        <option value="site-que-responde-atividade">Site que responde atividade</option>
+                        
+
+                        </select>
+                        
+                        <label for="quantidade">Qualidade</label>
+                        <input type="number" id="quantidade" name="quantidade" min="1" value="1 ">
+
+                        <label for="pagamento">forma de pagamento</label>
+                        <br>
+                        <select name="pagamento" id="pagamento">
+                        <option value="pix">PIX</option>
+                        <option value="cartao">Cartão de credito</option>
+                        <option value="boleto">boleto</option>
+                        </select>
+                    
+                <button type="submit"> Finalizar Pedido</button>
+                    </form> 
+
+
+       <footer class="meu__rodape">
+        <p> Maria Julia Coimbra
+       </p>
+       </footer>
+    
+   
+</body>
+</html> 
