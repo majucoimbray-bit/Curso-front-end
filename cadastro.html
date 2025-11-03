@@ -1,87 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio - Maria Julia Coimbra</title>
-   <link rel="stylesheet" href="style.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Criar Conta — Maria Julia Coimbra</title>
+<link rel="stylesheet" href="sstyle.css" />
+
 </head>
 <body>
-    <header class="cabecalho">
+     <header class="cabecalho">
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a> 
             <a class="cabecalho__menu__link"href="sobre.html">Sobre Mim</a>
             <a class="cabecalho__menu__link" href="produtos.html">Produtos</a>
             <a class="cabecalho__menu__link" href="falecomigo.html">Fale Comigo</a>
-            <a class="cabecalho__menu__link" href="maisvendidos.html">Mais Vendidos</a>
-            <a class="cabecalho__menu__link" href="cadastro.html">Cadastro</a>
+<a class="cabecalho__menu__link" href="cadastro.html">Cadastro</a>
    
    
-   
-   
- </nav>
+
+        </nav>
     </header>
+<main class="container">
+<section class="card">
+<h1 class="card__title">Criar Conta</h1>
 
-              <form action="cadastro.html" method="post">
-                <H2>Cadastro do Cliente</H2>
-                <label for="nome">Nome completo</label>
-                <input type="text" id="nome" name="nome">
+<form id="form-cadastro" action="#" method="post" novalidate>
+<div class="field">
+<label for="nome">Nome completo</label>
+<input type="text" id="nome" name="nome" required minlength="3" pattern="^[A-Za-zÀ-ú\s]+$" placeholder="Seu nome completo">
+<div class="mensagem-erro" aria-live="polite"></div>
+</div>
 
-                <label for="email">email:</label>
-                <input type="email" name="imail" id="email">
+<div class="field">
+<label for="cpf">CPF</label>
+<input type="text" id="cpf" name="cpf" required pattern="^\d{11}$" maxlength="11" placeholder="Somente números (11 dígitos)">
+<div class="mensagem-erro" aria-live="polite"></div>
+</div>
 
-                <label for="Telefone">Telefone/Whatsapp</label>
-                <input type="tel" id="Telefone" name="telefone">
+<div class="field">
+<label for="email">E-mail</label>
+<input type="email" id="email" name="email" required placeholder="seu@email.com">
+<div class="mensagem-erro" aria-live="polite"></div>
+</div>
 
-                <label for="senha">Senha</label>
-                <input type="passoword" id="senha" name="senha">
-                <button type="submit">Cadastrar</button>
-                 </form> 
+<div class="field">
+<label for="telefone">Telefone / Whatsapp</label>
+<input type="tel" id="telefone" name="telefone" required pattern="^\d{10,11}$" placeholder="Apenas números, 10 ou 11 dígitos">
+<div class="mensagem-erro" aria-live="polite"></div>
+</div>
 
-                 <form action="login" method="post">
-                    <h2>login</h2>
+<div class="field">
+<label for="senha">Senha</label>
+<input type="password" id="senha" name="senha" required minlength="6" placeholder="No mínimo 6 caracteres">
+<div class="mensagem-erro" aria-live="polite"></div>
+</div>
 
-                    <label for="email">E-mail</label>
-                    <input type="email"  id="email" name="email"> 
+<div class="actions">
+<button type="submit" class="btn">Criar Conta</button>
+</div>
 
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" name="senha">
-                    <button type="submit">Entrar </button>
-                    </form>
- 
-                    <form action="produtos.html" method="post">
-
-                        <label for="produto">Selecione o programa que deseja</label>
-                        <br>
-                        <select name="selecionar" id="">
-                        <option value="">Escolha</option>
-                        <option value="Programa-para-hackear-celular-do-namorado"> Programa para heckar o celular do namorado</option>
-                        <option value="Site-para-loja-de-roupa"> Site loja de roupa</option>
-                        <option value="site-que-responde-atividade">Site que responde atividade</option>
-                        
-
-                        </select>
-                        
-                        <label for="quantidade">Qualidade</label>
-                        <input type="number" id="quantidade" name="quantidade" min="1" value="1 ">
-
-                        <label for="pagamento">forma de pagamento</label>
-                        <br>
-                        <select name="pagamento" id="pagamento">
-                        <option value="pix">PIX</option>
-                        <option value="cartao">Cartão de credito</option>
-                        <option value="boleto">boleto</option>
-                        </select>
-                    
-                <button type="submit"> Finalizar Pedido</button>
-                    </form> 
+<p class="small">Já tem conta? <a href="login.html">Entrar</a></p>
+</form>
+</section>
+</main>
 
 
-       <footer class="meu__rodape">
-        <p> Maria Julia Coimbra
-       </p>
-       </footer>
-    
-   
+<script type="module" src="java/script.js"></script>
 </body>
-</html> 
+</html>

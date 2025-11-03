@@ -3,58 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Produtos - Estilo Livre</title>
+  <title>Produtos — Maria Julia Coimbra</title>
   <link rel="icon" href="./assets/icon/fav-icon.png" type="image/png" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="sstyle.css" />
 </head>
 <body>
-
-  <nav class="cabecalho__menu">
-    <a class="cabecalho__menu__link" href="index.html">Início</a>
-    <a class="cabecalho__menu__link" href="cadastro.html">Cadastro</a>
-    <a class="cabecalho__menu__link" href="produtos.html">Produtos</a>
-    <a class="cabecalho__menu__link" href="falecomigo.html">Fale Comigo</a>
-    <a class="cabecalho__menu__link" href="maisvendidos.html">Mais Vendidos</a>
-  <a class="cabecalho__menu__link" href="cadastro.html">Cadastro</a>
+   <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a> 
+            <a class="cabecalho__menu__link"href="sobre.html">Sobre Mim</a>
+            <a class="cabecalho__menu__link" href="produtos.html">Produtos</a>
+            <a class="cabecalho__menu__link" href="falecomigo.html">Fale Comigo</a>
+<a class="cabecalho__menu__link" href="cadastro.html">Cadastro</a>
    
-   </nav>
+   
 
-  <main class="apresentacao">
-    <h1 class="apresentacao__titulo">Nossos Produtos</h1>
-    <p class="apresentacao__texto">
-      Aqui você acha o site que precisa!
+        </nav>
+    </header>
 
-    <div class="produtos__container">
-      <section class="produtos__container__item">
+  <main class="apresentacao" role="main">
+    <div class="intro">
+      <h1 class="apresentacao__titulo">Nossos Produtos</h1>
+      <p class="apresentacao__texto">Aqui você encontra soluções web prontas para usar — com entrega rápida e suporte.</p>
+    </div>
+
+    <section class="produtos__container" aria-label="Lista de produtos">
+      <article class="produtos__container__item" aria-labelledby="p1-title">
         <img src="download.jpeg" alt="Site que responde atividades" />
-        <p class="descricao">Site que responde atividades - Entrega rápida, Garantia de 12 meses,Suporte 24h</p>
-        <span class="preco">R$ 89,90</span>
-        <button class="botao-comprar">Comprar</button>
-      </section>
+        <h3 id="p1-title" class="descricao">Site que responde atividades</h3>
+        <p class="detalhes">Entrega rápida • Garantia 12 meses • Suporte 24h</p>
+        <div class="preco-comprar">
+          <span class="preco">R$ 89,90</span>
+          <button class="botao-comprar" aria-label="Comprar Site que responde atividades">Comprar</button>
+        </div>
+      </article>
 
-      
+      <article class="produtos__container__item" aria-labelledby="p2-title">
+        <img src="download (2).jpeg" alt="Site para loja de roupas" />
+        <h3 id="p2-title" class="descricao">Site para loja de roupas</h3>
+        <p class="detalhes">Layouts responsivos • Pagamento integrado • Suporte 12 meses</p>
+        <div class="preco-comprar">
+          <span class="preco">R$ 229,90</span>
+          <button class="botao-comprar" aria-label="Comprar Site para loja de roupas">Comprar</button>
+        </div>
+      </article>
 
-      <section class="produtos__container__item">
-        <img src="download (2).jpeg" alt="Site Para Loja de Roupa" />
-        <p class="descricao">Site Para Loja de Roupa- Entrega rápida, Garantia de 12 meses,Suporte 24h</p>
-        <span class="preco">R$ 229,90</span>
-        <button class="botao-comprar">Comprar</button>
-      </section>
+      <article class="produtos__container__item" aria-labelledby="p3-title">
+        <img src="download-3.jpeg" alt="Consultoria de segurança e recuperação de senha" />
+        <h3 id="p3-title" class="descricao">Consultoria de segurança & recuperação</h3>
+        <p class="detalhes">Serviço legítimo de recuperação de acesso e orientação de segurança digital.</p>
+        <div class="preco-comprar">
+          <span class="preco">R$ 199,90</span>
+          <button class="botao-comprar" aria-label="Comprar consultoria de segurança">Comprar</button>
+        </div>
+      </article>
+    </section>
+  </main>
 
-      <section class="produtos__container__item">
-        <img src="download.jpeg" alt="Site para hackear celular do namorado" />
-        <p class="descricao">Site para hackear celular do namorado-Entrega rápida, Garantia de 12 meses,Suporte 24h</p>
-        <span class="preco">R$ 199,90</span>
-        <button class="botao-comprar">Comprar</button>
-      </section>
-
-    
-      
-
-  <footer class="meu__rodape">
-    <p>© 2025 - Maria Julia Coimbra</p>
+  <footer class="meu__rodape" role="contentinfo">
+    <p>© 2025 — Maria Julia Coimbra</p>
   </footer>
-
 </body>
-</html> 
-                                        
+</html>
